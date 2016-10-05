@@ -1,22 +1,19 @@
 ---
+title: Index
 layout: default
 ---
 
-<div class="home">
+<div class="home" ng-app="afmcr">
 
-  <h1 class="page-heading">Posts</h1>
+  <div ng-controller="test">
+    <h1 class="page-heading" ng-bind="title">Default Title</h1>
+  </div>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+  <div ng-controller="Events">
+    <li ng-repeat="event in event_list">
+      <span ng-bind="event.name"></span>
+    </li>
+  </div>
 
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
