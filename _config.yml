@@ -17,6 +17,7 @@ title: Age Friendly Neighbourhoods
 email: kim@alliscalm.net
 twitter_username: kimadactl
 github_username:  kimdactyl
+baseurl: /afmcr
 
 # Build settings
 markdown: kramdown
