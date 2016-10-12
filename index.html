@@ -10,9 +10,27 @@ layout: default
   </div>
 
   <div ng-controller="Events">
-    <li ng-repeat="event in event_list">
-      <span ng-bind="event.name"></span>
-    </li>
+    <div ng-repeat="event in event_list">
+      <div class="event">
+        <div class="event__date">
+          <div class="date">
+            <div class="date__day" ng-bind="event.start | date: 'dd'" ></div>
+            <div class="date__month" ng-bind="event.start | date: 'MMM'"></div>
+          </div>
+        </div>
+        <div class="event__description">
+          <h2 class="event__title" ng-bind="event.name"></h2>
+          <p class="event__details">
+            <strong ng-bind="event.start | date: 'h:mma, EEEE d MMMM yyyy'"></strong><br>
+            <strong ng-bind="event.location"></strong> <a href="#">(see map)</a>
+          </p>
+          <p class="event__summary" ng-bind="event.description"></p>
+          <p class="event__more">
+            <a href="#">Read more about this event&hellip;</a>
+          </p>
+      </div>
+
+    </div>
   </div>
 
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>

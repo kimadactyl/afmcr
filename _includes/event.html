@@ -1,0 +1,19 @@
+<div class="event">
+  <div class="event__date">
+    {% include date.html day=include.day month=include.month %}
+  </div>
+  <div class="event__description">
+    <h2 class="event__title">
+      {{ include.title }}
+    </h2>
+    <p class="event__details">
+      <strong>When: 9:30am-11:00am Friday 15th November 2016</strong><br>
+      <strong>Where: {{ include.location }}</strong> <a href="#">(see map)</a>
+    </p>
+    <p class="event__summary">
+      {{ include.summary }}
+    </p>
+    <p class="event__more">
+      <a href="#">Read more about this event&hellip;</a>
+    </p>
+</div>

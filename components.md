@@ -28,22 +28,8 @@ We could cause a diplomatic crisis. Take the ship into the Neutral Zone Flair is
 
 ## Event
 
-<div class="event">
-  <div class="event__date">
-    {% include date.html day="15" month="Nov" %}
-  </div>
-  <div class="event__description">
-    <h2 class="event__title">
-      John's Knitting Circle
-    </h2>
-    <p class="event__details">
-      <strong>When: 9:30am-11:00am Friday 15th November 2016</strong><br>
-      <strong>Where: Bob Ross Art Centre, 123 Fake Street, Hulme, Manchester M1 1AA</strong> <a href="#">(see map)</a>
-    </p>
-    <p class="event__summary">
-      This is the description from the calendar Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nos Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.
-    </p>
-    <p class="event__more">
-      <a href="#">Read more about this event&hellip;</a>
-    </p>
-</div>
+{% include event.html day="18" month="Mar"
+                      title="Emily's Roller Derby"
+                      location="Bob Ross Art Centre, 123 Fake Street, Hulme, Manchester M1 1AA"
+                      summary="We could cause a diplomatic crisis. Take the ship into the Neutral Zone Flair is what marks the difference between artistry and mere competence. A lot of things can change in twelve years, Admiral. Did you come here for something in particular or just general Riker-bashing? In all trust, there is the possibility for betrayal. Some days you get the bear, and some days the bear gets you."
+%}
