@@ -1,8 +1,8 @@
 var app = angular.module('afmcr', []);
 
 app.controller('Events', function($scope, $http) {
-  $http.get('http://mafn.herokuapp.com/api/events').
-    then(function(response) {
+  $http.get('http://mafn.herokuapp.com/api/events')
+        .then(function(response) {
         $scope.event_list = response.data;
     });
 });
