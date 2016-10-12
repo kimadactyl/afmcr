@@ -1,0 +1,15 @@
+// Exchange for mixin variable later on
+$date-color: $brand-2
+
+.date
+  display: inline-block
+  text-align: center
+  border: 1px solid $date-color
+  &__day
+    +h1
+    min-width: 1.5em
+    color: white
+    background-color: $date-color
+  &__month
+    +h3
+    color: $date-color
